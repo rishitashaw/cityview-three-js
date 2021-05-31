@@ -35,7 +35,7 @@ const environmentMapTexture = cubeTextureLoader.load([
 
 //const material = new THREE.MeshNormalMaterial();
 const material = new THREE.MeshStandardMaterial();
-material.metalness = 1;
+material.metalness = 0.6;
 material.roughness = 0;
 material.envMap = environmentMapTexture;
 
@@ -65,7 +65,7 @@ document.addEventListener("mousemove", (event) => {
   var mouseY = -event.clientY * 0.5;
   pointLight.position.x = mouseX;
   pointLight.position.y = mouseY;
-  pointLight.position.z = 100;
+  pointLight.position.z = 10;
 });
 
 scene.add(pointLight);
@@ -134,13 +134,13 @@ const clock = new THREE.Clock();
 const tick = () => {
   const elapsedTime = clock.getElapsedTime();
   // update objects
-  sphere.rotation.x = 0.1 * elapsedTime;
-  plane.rotation.x = 0.1 * elapsedTime;
-  torus.rotation.x = 0.1 * elapsedTime;
+  sphere.rotation.x = 0.5 * elapsedTime;
+  plane.rotation.x = 0.5 * elapsedTime;
+  torus.rotation.x = 0.5 * elapsedTime;
 
-  sphere.rotation.y = 0.15 * elapsedTime;
-  plane.rotation.y = 0.15 * elapsedTime;
-  torus.rotation.y = 0.15 * elapsedTime;
+  sphere.rotation.y = 0.35 * elapsedTime;
+  plane.rotation.y = 0.35 * elapsedTime;
+  torus.rotation.y = 0.35 * elapsedTime;
 
   // Render
   renderer.render(scene, camera);
