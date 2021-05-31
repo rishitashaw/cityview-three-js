@@ -6,6 +6,9 @@
 
 - use the debugger to play with the roughness and metalness, and control the reflection
 
+![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/75828535/120220271-192a9b80-c25a-11eb-9f20-a0bd70525762.gif)
+
+
 ## Setup
 
 Download [Node.js](https://nodejs.org/en/download/).
